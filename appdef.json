@@ -1,0 +1,40 @@
+{
+  "name": "clusternator-elk-example",
+  "tasks": [
+    {
+      "containerDefinitions": [
+        {
+          "volumesFrom": [],
+          "portMappings": [
+            {
+              "hostPort": 9292,
+              "containerPort": 9292,
+              "protocol": "tcp"
+            },
+            {
+              "hostPort": 9000,
+              "containerPort": 9000,
+              "protocol": "tcp"
+            },
+            {
+              "hostPort": 9152,
+              "containerPort": 9152,
+              "protocol": "tcp"
+            }
+          ],
+          "command": [],
+          "environment": [],
+          "essential": true,
+          "entryPoint": [],
+          "links": [],
+          "mountPoints": [],
+          "memory": 512,
+          "name": "node-server",
+          "image": "pblittle/docker-logstash"
+        }
+      ],
+      "volumes": [],
+      "family": "clusternator-elk-example"
+    }
+  ]
+}
