@@ -7,8 +7,10 @@ var port = process.argv[3];
 console.log('host', host);
 console.log('port', port);
 
+
+// TODO ensure failure on connection error
 winston.add(winston.transports.Logstash, {
-  port: 9152,
+  port: parseInt(port),
   node_name: 'yolo',
   host: host
 });
