@@ -15,4 +15,4 @@ winston.add(winston.transports.Logstash, {
   host: host
 });
 
-winston.error('FUCKING LOGSTASH');
+winston.error('LOGSTASH');
