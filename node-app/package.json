@@ -10,6 +10,6 @@
   "license": "ISC",
   "dependencies": {
     "winston": "^1.0.2",
-    "winston-logstash": "^0.2.11"
+    "winston-logstash": "^0.4.0"
   }
 }
